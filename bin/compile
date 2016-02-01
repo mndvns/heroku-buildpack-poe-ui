@@ -24,5 +24,6 @@ cd $build_dir
 # make
 echo "-----> Compiling assets"
 export_env_dir $env_dir
-ls -la
+ls -la ./node_modules
+ls -la ./node_modules/poe-ui-serve/bin
 ASSET_CACHE=$cache_dir make prod
