@@ -19,9 +19,4 @@ source $bp_dir/lib/common.sh
 # Avoid GIT_DIR leak from previous build steps
 unset GIT_DIR
 
-cd $build_dir
-
-# make
-echo "-----> Compiling assets"
-export_env_dir $env_dir
-ASSET_CACHE=$cache_dir make prod
+make start
